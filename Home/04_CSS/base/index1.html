@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fi {width: 584px;
+            margin-top: 0%;
+            text-indent:2em;
+            border:2px outset #666;
+            border-radius:0px 20px 0px 20px; }
+        a{color: blue;}
+        .bl1{
+            position:fixed;
+            top: 365px;
+            left: 8px;
+          }
+        .wo span{
+            position: absolute;
+            top: -16px;
+            left: 150px;
+            display:none;}
+        .wo:hover span{display: block;}
+        .bl2{
+            position:fixed;
+            top: 385px;
+            left: 8px;
+          }
+        .pd span{
+            position: absolute;
+            top: 0px;
+            left: 130px;
+            display:none;}
+        .pd:hover span{display: block;}
+        .bl3{
+            position:fixed;
+            top: 405px;
+            left: 8px;
+          }
+        .ar span{
+            position: absolute;
+            top: 5px;
+            left: 70px;
+            display:none;}
+        .ar:hover span{display: block;}
+    </style>
+</head>
+<body>
+    <h1>Формат файлов.</h1>
+    <div class="fi">.DOC или .doc (от англ. <a href=""><img src="stre.png">document</a>) - расширение имени файла, используемое для файлов,
+        представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для
+        обозначение простых текстовых файлов без формирования, однако позже стало
+        использоваться для двоичных форматов с разметкой. 
+        <a href="">Документ MS Word<img src="wo.jfif"></a></div>
+    <div class="fi">Portable Document Format (<a href=""><img src="stre.png">PDF</a>) - межплатформенный формат электронных документов,
+        разработанный фирмой Adobe Systems с использованием ряда возможностей языка
+        Postscript.
+        <a href="">Документ PDF<img src="pd.png"></a></div>
+    <div class="fi">
+        ZIP - популярныый формат сжатия данных и архивации файлов. Файл в этом формате
+        обычно имеет раширение <a href=""><img src="stre.png">.zip</a> и хранит в сжатом или несжатом виде один или несколько
+        файлов, которое можно из него извлечь путем распаковки с помощью специальной 
+        программы.
+        <a href=""> Архив<img src="ar.gif"></a>
+    </div>
+    <h2>Это список файлов</h2>
+    <div class="bl1"><a href="" class="wo"><img src="pa.jfif">Документ MS Word<span><img src="wo.jfif"></span></a></div>
+    <div class="bl2"><a href="" class="pd"><img src="pa.jfif">Документ PDF<span><img src="pd.png"></span></a></div>
+    <div class="bl3"><a href="" class="ar"><img src="pa.jfif">Архив<span><img src="ar.gif"></span></a></div>
+</body>
+</html>

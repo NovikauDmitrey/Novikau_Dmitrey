@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            display: flex;
+        }
+        .leftBlock{
+            background-color: rgb(204, 204, 204);
+            float: left;   
+        }
+        .mat{
+            background-color: rgb(214, 220, 220);
+            flex-direction: column-reverse;
+        }
+        .centerBlock{
+            background-color: rgb(170, 170, 170);
+            margin-bottom: .2em;
+        }
+        .footer{
+            background-color: rgb(204, 204, 204);
+            margin-bottom: .2em;
+        }
+        img{
+            float: right;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">    
+    <div class="leftBlock">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Должен присутствовать цвет
+                    фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните
+                    контентом достаточным,
+                    чтобы по высоте он начинал
+                    захватывать вторую статью, 
+                    как показано в данном примере</li>
+                </ul> 
+        </div>
+        <div class="mat">
+            <div class="centerBlock">
+                <h3>Статья 1</h3>
+                Размер блок:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствоватьцвет фона<br>
+                Во всех "статях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom.  
+            </div>
+            <div class="centerBlock">
+                <h3>Статья 2</h3>
+                Размер блок:
+                Занммает всю доступную ширину
+                Должен присутствоватьцвет фона
+                Во всех "статях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom. Картинка вставлена при помощи тега, плавание организовано по правлму краю внутри
+                данной статьи для этой картинки.
+                <div><img src="../base/convert.png" alt="convert"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+      
+    </div>
+    <div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</div>
+</body>
+</html>
