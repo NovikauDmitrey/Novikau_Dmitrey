@@ -15,20 +15,30 @@
              position: relative; 
              cursor: pointer; 
              display: inline-block;
-            border-radius: 5%;}
+            border-radius: 5%;
+            transition:left 2s line;
+           }
         div.ml { 
             width: 100px; 
-            display: none }
+            display: none;
+            position: absolute;
+            transition:left 2s line;
+            }
         div.ml > div { 
             background-color: #d3d3d3; 
             border: solid #4d4d4d 1px; 
-            cursor: pointer }
+            cursor: pointer;
+            transition:left 2s line; 
+            }
         div.ML > div:hover div.ml { 
             display: block; 
             position: absolute; 
             left: 0%; 
             top: 105%; 
-            z-index: 1 }    
+            z-index: 1;
+            opacity: 1;
+            transition:left 2s line;
+        }    
 
        
         @media screen and (max-width:740px){
