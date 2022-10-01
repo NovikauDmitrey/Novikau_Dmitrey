@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        table{background: rgb(255, 255, 255); border-collapse:collapse; caption-side: bottom; border: 4px dotted #000;}
+    tr:nth-child(1) { background-color: #808080;} 
+    tr:nth-child(2n+3) { background-color: #d3d3d3;}   
+    TD, TH {padding: 5px; border: 1px dotted black;}
+    tr:hover { background-color: #00ff0d; }
+    </style>
+</head>
+<body>
+    <table>
+        <tr id="aaa">
+         <th>ФИО</th>
+         <th>пол</th>
+         <th>Должность</th>
+         <th>дат. рожд.</th>
+         <th>Данные 01</th>
+         <th>Данные 02</th>
+     </tr> 
+      <tr id="aaa">
+         <td>Иванов Иван Иванович</td>
+         <td>М</td>
+         <td>начальник</td>
+         <td>01.01.1960</td>
+         <td>4567</td>
+         <td>3453</td>
+     </tr>
+     <tr id="aaa">
+         <td>Петрова Илонна Петровна</td>
+         <td>Ж</td>
+         <td>секретарь</td>
+         <td>01.01.1989</td>
+         <td>98795</td>
+         <td>46523</td>
+     </tr>
+     <tr id="aaa">
+         <td>Сидоров Илья Игоревич</td>
+         <td>М</td>
+         <td>бухгалтер</td>
+         <td>01.01.1979</td>
+         <td>743434</td>
+         <td>987979</td>
+     </tr>
+     <tr id="aaa">
+         <td>Пупин Фёдор Фёдорович</td>
+         <td>М</td>
+         <td>водитель</td>
+         <td>01.01.1963</td>
+         <td>74323434</td>
+         <td>9232379</td>
+     </tr>
+     <tr id="aaa">
+         <td>Крупин Сергей Иванович</td>
+         <td>М</td>
+         <td>водитель 2</td>
+         <td>01.01.1983</td>
+         <td>3234534</td>
+         <td>923123379</td>
+     </tr>
+     <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
+ </table>
+
+ <button id="btn">Показать все строки</button>
+    
+ <script 
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function($){
+
+            $('#btn').click(function(){
+                $('#aaa').show();
+            })
+        });
+    </script>
+    <script>
+        $(document).ready(function($){
+
+            $('#aaa').click(function(){
+                $('#aaa').hide();
+            })
+        });
+    </script>
+</body>
+</html>
